@@ -1,7 +1,7 @@
 # Example HTTP Request in Python
 
 Send a JSON object with the word being the the word(s) you want to translate and dest being the desintation language. Refer to the below example. 
-'''
+```
 import requests
 
 
@@ -10,7 +10,7 @@ url = 'http://128.193.54.168:2135/'
 
 response = requests.post(url, json=json)
 translation = response.text
-'''
+```
 
 # Supported Languages with Destination Code
 
