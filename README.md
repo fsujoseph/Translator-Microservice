@@ -5,11 +5,12 @@ Send a JSON object with the word being the the word(s) you want to translate and
 import requests
 
 
-json = {'word':'hello', 'dest':'es'}
+json = {'word':'hello', 'cur':'en', 'dest':'es'}
 url = 'http://128.193.54.168:2135/'
 
 response = requests.post(url, json=json)
 translation = response.text
+
 
 # Supported Languages with Destination Code
 
