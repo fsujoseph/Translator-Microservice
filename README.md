@@ -6,7 +6,7 @@ import requests
 
 
 json = {'word':'hello', 'cur':'en', 'dest':'es'}
-url = 'http://128.193.54.168:2135/'
+url = 'http://flip1.engr.oregonstate.edu:2135'
 
 response = requests.post(url, json=json)
 translation = response.text
